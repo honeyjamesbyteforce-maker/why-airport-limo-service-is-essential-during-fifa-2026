@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f4;
+  color: #1f2933;
+  line-height: 1.7;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #090909;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.logo {
+  color: #f5c542;
+  font-size: 21px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.88;
+}
+
+.nav a:hover {
+  color: #f5c542;
+  opacity: 1;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.78)),
+    radial-gradient(circle at top left, #264d2d, #090909 55%);
+  color: #ffffff;
+  padding: 88px 0 76px;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: rgba(245, 197, 66, 0.14);
+  color: #f5c542;
+  border: 1px solid rgba(245, 197, 66, 0.45);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  max-width: 920px;
+  font-size: clamp(34px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+}
+
+.hero-text {
+  max-width: 790px;
+  font-size: 19px;
+  color: #e5e7eb;
+  margin-bottom: 28px;
+}
+
+.hero-button,
+.button {
+  display: inline-block;
+  background: #f5c542;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 14px 24px;
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button:hover,
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+}
+
+.blog {
+  max-width: 900px;
+  background: #ffffff;
+  margin-top: 46px;
+  margin-bottom: 46px;
+  padding: 46px;
+  border-radius: 24px;
+  box-shadow: 0 20px 58px rgba(15, 23, 42, 0.1);
+}
+
+.blog section {
+  margin-bottom: 44px;
+}
+
+.blog section:last-child {
+  margin-bottom: 0;
+}
+
+.blog h2 {
+  color: #111827;
+  font-size: 30px;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.blog h3 {
+  color: #14532d;
+  font-size: 22px;
+  line-height: 1.35;
+  margin: 26px 0 10px;
+}
+
+.blog p {
+  color: #3e4c59;
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.blog ul {
+  padding-left: 23px;
+  margin-top: 16px;
+}
+
+.blog li {
+  color: #3e4c59;
+  font-size: 17px;
+  margin-bottom: 13px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.benefit-card {
+  background: #fbfaf4;
+  border: 1px solid #eee1b7;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.benefit-card h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.full-card {
+  grid-column: 1 / -1;
+}
+
+.dark-box {
+  background: #101010;
+  color: #ffffff;
+  border-radius: 22px;
+  padding: 34px;
+}
+
+.dark-box h2,
+.dark-box h3,
+.dark-box p,
+.dark-box li {
+  color: #ffffff;
+}
+
+.dark-box h3 {
+  color: #f5c542;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #14532d, #0f172a);
+  color: #ffffff;
+  border-radius: 22px;
+  padding: 34px;
+}
+
+.cta-box h2,
+.cta-box p,
+.cta-box li {
+  color: #ffffff;
+}
+
+.cta-box ul {
+  margin-bottom: 18px;
+}
+
+.faq details {
+  border: 1px solid #e4e4df;
+  border-radius: 15px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  background: #fdfcf8;
+}
+
+.faq summary {
+  cursor: pointer;
+  color: #111827;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.faq details p {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.site-footer {
+  background: #090909;
+  color: #ffffff;
+  text-align: center;
+  padding: 26px 0;
+}
+
+.site-footer p {
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+@media (max-width: 780px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 60px 0 52px;
+  }
+
+  .blog {
+    width: min(94%, 900px);
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog h2 {
+    font-size: 25px;
+  }
+
+  .blog h3 {
+    font-size: 20px;
+  }
+
+  .hero-text,
+  .blog p,
+  .blog li {
+    font-size: 16px;
+  }
+
+  .dark-box,
+  .cta-box {
+    padding: 26px 20px;
+  }
+}
